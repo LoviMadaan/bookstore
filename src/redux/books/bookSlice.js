@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { v4 as uuidv4 } from 'uuid';
 import data from '../../components/Todo/TodoData';
 
 const initialState = {
@@ -10,11 +11,15 @@ const userSlice = createSlice({
   initialState,
   reducers: {
     bookAdd: (state, action) => {
-      state.push(action.payload);
+      const addNew = {
+        item_id: uuidv4(),
+        title: action.payload.title,
+        author: action.payload.author,
+      };
+      state.bookData.push(addNew);
     },
     bookRemove: (state, action) => {
-      const bookId = action.payload;
-      state.bookData.filter((item) => item.id !== bookId);
+      state.bookData = state.bookData.filter((book) => book.item_id !== action.payload);
     },
   },
 });
