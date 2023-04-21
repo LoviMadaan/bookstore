@@ -4,15 +4,13 @@ import BookCategories from './components/Categories/Categories';
 import BookTodo from './components/Todo/Todo';
 import BookLinks from './components/Links/Links';
 
-function TodoApp() {
-  return (
-    <>
-      <BookLinks />
-      <Routes>
-        <Route path="/" element={<BookTodo />} />
-        <Route path="/category" element={<BookCategories />} />
-      </Routes>
-    </>
-  );
-}
+const TodoApp = () => (
+  <>
+    <BookLinks />
+    <Routes>
+      <Route path="/" element={<BookTodo />} />
+      <Route path="/category" element={<BookCategories />} />
+    </Routes>
+  </>
+);
 export default TodoApp;
