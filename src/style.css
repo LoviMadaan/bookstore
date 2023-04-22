@@ -153,10 +153,12 @@ nav ul,
   font-size: 16px;
   text-transform: capitalize;
   margin-bottom: 7px;
+  font-family: 'RobotoSlab-Light';
 }
 
 .chapter-h3 {
-  color: #000;
+  color: #121212;
+  font-family: 'RobotoSlab-Light';
 }
 
 .update-h4 {
@@ -170,6 +172,7 @@ nav ul,
   border-radius: 4px;
   margin-top: 15px;
   cursor: pointer;
+  font-family: 'RobotoSlab-Light';
 }
 
 .submit-form {
