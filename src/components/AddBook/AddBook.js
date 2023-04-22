@@ -23,9 +23,9 @@ const BookAdd = () => {
       {books.map((book) => (
         <div className="books" key={book.item_id}>
           <div className="book-add">
-            <h2 className="category">{book.category}</h2>
-            <h1 className="title">{book.title}</h1>
-            <h3 className="author">{book.author}</h3>
+            <p className="category">{book.category}</p>
+            <h2 className="title">{book.title}</h2>
+            <p className="author">{book.author}</p>
             <div className="bttns">
               <div className="bttn">Comments</div>
               <div
@@ -44,7 +44,7 @@ const BookAdd = () => {
           <div className="progress-bar">
             <ProgressB />
             <ul className="pro-text">
-              <li><h2>65%</h2></li>
+              <li><h2>50%</h2></li>
               <li><p>Completed</p></li>
             </ul>
           </div>
