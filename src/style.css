@@ -14,8 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f5f9;
-  font-family: sans-serif;
+  background: #f4f5f9;  
 }
 
 .container {
@@ -80,7 +79,7 @@ nav ul,
   font-size: 16px;
   text-transform: capitalize;
   margin-top: 7px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'sans-serif';
 }
 
 .title {
@@ -88,7 +87,7 @@ nav ul,
   font-size: 18px;
   text-transform: capitalize;
   margin-top: 7px;
-  font-family: 'RobotoSlab-Bold';
+  font-family: 'RobotoSlab-Bold', 'sans-serif';
 }
 
 .author {
@@ -96,7 +95,7 @@ nav ul,
   font-size: 14px;
   font-weight: 400;
   margin-top: 7px;
-  font-family: 'RobotoSlab-Light';
+  font-family: 'RobotoSlab-Light' , 'sans-serif';
 }
 
 .bttns {
@@ -109,7 +108,7 @@ nav ul,
   cursor: pointer;
   border-left: 1px solid #888;
   padding: 0 20px;
-  font-family: 'RobotoSlab-Light';
+  font-family: 'RobotoSlab-Light' , sans-serif;
 }
 
 .bttn:nth-child(1) {
@@ -153,12 +152,12 @@ nav ul,
   font-size: 16px;
   text-transform: capitalize;
   margin-bottom: 7px;
-  font-family: 'RobotoSlab-Light';
+  font-family: 'RobotoSlab-Light' , sans-serif;
 }
 
 .chapter-h3 {
   color: #121212;
-  font-family: 'RobotoSlab-Light';
+  font-family: 'RobotoSlab-Light' , 'sans-serif';
 }
 
 .update-h4 {
@@ -172,7 +171,7 @@ nav ul,
   border-radius: 4px;
   margin-top: 15px;
   cursor: pointer;
-  font-family: 'RobotoSlab-Light';
+  font-family: 'RobotoSlab-Light' , 'sans-serif';
 }
 
 .submit-form {
