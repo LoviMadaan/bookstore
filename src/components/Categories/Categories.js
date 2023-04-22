@@ -1,13 +1,9 @@
-import { useSelector } from 'react-redux';
+import React from 'react';
 
-const BookCategories = () => {
-  const bookCategorie = useSelector((store) => store.categories.bookName);
-
+function BookCategories() {
   return (
-    <>
-      <h1>{bookCategorie}</h1>
-      <button type="button" className="button-status">Check Status</button>
-    </>
+    <button type="button" className="btn btn-status">Check Status</button>
   );
-};
+}
+
 export default BookCategories;

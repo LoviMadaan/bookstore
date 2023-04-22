@@ -1,16 +1,30 @@
-import { Routes, Route } from 'react-router-dom';
+import React from 'react';
+import {
+  createBrowserRouter,
+  Route,
+  createRoutesFromElements,
+  RouterProvider,
+} from 'react-router-dom';
 import './components/style/Style.css';
-import BookCategories from './components/Categories/Categories';
-import BookTodo from './components/Todo/Todo';
-import BookLinks from './components/Links/Links';
+import Layout from './components/Main/Layout';
+import Home from './components/AddBook/Home';
+import Categories from './components/Categories/Categories';
 
-const TodoApp = () => (
-  <>
-    <BookLinks />
-    <Routes>
-      <Route path="/" element={<BookTodo />} />
-      <Route path="/category" element={<BookCategories />} />
-    </Routes>
-  </>
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="/Categories" element={<Categories />} />
+    </Route>,
+  ),
 );
-export default TodoApp;
+
+function App() {
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
+}
+
+export default App;
