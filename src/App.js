@@ -5,7 +5,7 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from 'react-router-dom';
-import './components/style/Style.css';
+import './style.css';
 import Layout from './components/Main/Layout';
 import Home from './components/AddBook/Home';
 import Categories from './components/Categories/Categories';
