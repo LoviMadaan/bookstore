@@ -157,7 +157,7 @@ nav ul,
 }
 
 .chapter-h3 {
-  color: #121212;
+  color: #050505;
   font-family: 'RobotoSlab-Light', sans-serif;
 }
 
@@ -170,7 +170,7 @@ nav ul,
   color: #fff;
   text-align: center;
   border-radius: 4px;
-  margin-top: 15px;
+  margin-top: 16px;
   cursor: pointer;
   font-family: 'RobotoSlab-Light', sans-serif;
 }
